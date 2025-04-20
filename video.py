@@ -25,13 +25,13 @@ time.sleep(1)
 picam2.start()
 encoder_bitrate = 10000000
 h264_filename = "output_video.h264"
-mp4_filename = "output_video.mp4"
+mp4_filename = "output_video2.mp4"
 encoder = H264Encoder(bitrate=10000000)
 print("Sleeping to give time to start recording")
 time.sleep(3)
 picam2.start_recording(encoder, h264_filename)
 
-record_time = 200
+record_time = 20
 print(f"Sleeping for {record_time} secs, currently recording.")
 time.sleep(record_time)
 picam2.stop_recording()
