@@ -22,7 +22,7 @@ time.sleep(1)
 
 #main loop
 picam2.start()
-pic_counter = 1
+pic_counter = 40
 while True:
     filename = f'images/picture{pic_counter}.jpg'
     picam2.capture_file(filename)
