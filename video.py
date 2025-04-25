@@ -4,7 +4,6 @@ import time
 import subprocess
 from picamera2.encoders import H264Encoder
 
-
 time.sleep(30)
 #Setup
 picam2 = Picamera2()
@@ -17,7 +16,7 @@ time.sleep(2)
 picam2.start()
 encoder_bitrate = 10000000
 h264_filename = "output_video.h264"
-mp4_filename = "output_video.mp4"
+mp4_filename = "output_video2.mp4"
 encoder = H264Encoder(bitrate=10000000)
 print("Sleeping to give time to start recording")
 time.sleep(3)
