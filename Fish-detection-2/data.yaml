@@ -1,0 +1,12 @@
+names:
+- fish
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: fish-detection-8jhpr
+  url: https://universe.roboflow.com/fishdetection-jktko/fish-detection-8jhpr/dataset/2
+  version: 2
+  workspace: fishdetection-jktko
+test: ../test/images
+train: ../train/images
+val: ../valid/images
