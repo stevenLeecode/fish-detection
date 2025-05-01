@@ -19,6 +19,7 @@ video_path = "output_video2.mp4"
 cap = cv2.VideoCapture(video_path)
 original_fps = cap.get(cv2.CAP_PROP_FPS)
 
+frame_count = 0
 while cap.isOpened():
     success, frame = cap.read()
     if not success:
@@ -69,6 +70,10 @@ while cap.isOpened():
     
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
+    
+    frame_count += 1
+    print(f"Processed frame {frame_count}")
+
     
 cap.release
 cv2.destroyAllWindows()
